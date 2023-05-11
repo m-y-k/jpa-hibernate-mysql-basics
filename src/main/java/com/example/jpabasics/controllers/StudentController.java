@@ -85,7 +85,7 @@ public class StudentController {
     }
 
 
-    // API - 9 ---> find all the students having age or marks as provided
+    // API - 10 ---> find all the students having age greater as provided
     @GetMapping(value = "/get-all-age-greater/{age}")
     public List<String> getAllStudentsGreaterThanAge(@PathVariable Integer age) {
 
