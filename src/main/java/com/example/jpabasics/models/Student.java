@@ -16,6 +16,7 @@ import lombok.Setter;
 public class Student {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private int marks;
@@ -25,6 +26,6 @@ public class Student {
 
     private int age;
 
-    @OneToOne(mappedBy = "student")
+    @OneToOne(mappedBy = "student", cascade = CascadeType.ALL)
     LibraryCard libraryCard;
 }

@@ -35,5 +35,5 @@ public class LibraryCard {
     // foreign key --> primary key of parent
     @OneToOne
     @JoinColumn         // joinColumn has default value as - it will primary key of parent as foreign key
-            Student student;
+    Student student;
 }
